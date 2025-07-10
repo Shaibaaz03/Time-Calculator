@@ -1,0 +1,149 @@
+/* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f9f9f9;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+.input {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Greeting text */
+.greeting {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Heading */
+.input h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* Text input */
+.input input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input input[type="text"]:focus {
+    border-color: #555;
+}
+
+/* Error style */
+input.error {
+    border-color: #ff4d4f;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#convert-btn {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+#convert-btn:hover {
+    background-color: #e0e0e0;
+}
+
+#delete-btn {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+#delete-btn:hover {
+    background-color: #e04345;
+}
+
+/* Result text */
+#result {
+    font-size: 1.2rem;
+    color: #222;
+    margin-top: 15px;
+}
+
+/* Error message on index.html */
+#error {
+    color: #ff4d4f;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+#displayName {
+    padding-bottom: 30px;
+    font-size: 27px;
+    font-weight: 200;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.full-box {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f9f9f9;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -79px;
+
+}
+
+.name-layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-name {
+  position: absolute;
+  top: -40px;
+  font-size: 24px;
+  font-family: 'Pacifico', cursive;
+  color: #4a90e2;
+  white-space: nowrap;
+  text-align: center;
+}
